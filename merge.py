@@ -1,8 +1,13 @@
 import os
 import pandas as pd
+from tkinter import filedialog
+import tkinter
 
-# doi current working directory
-folder='D:\Python\Pewfolder'
+# chon folder bang GUI
+root=tkinter.Tk()
+root.destroy()
+
+folder=filedialog.askdirectory()
 os.chdir(folder)
 
 # tao dataframe trong
